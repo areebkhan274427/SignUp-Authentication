@@ -1,6 +1,10 @@
 const signUp = document.getElementById('signup');
 const message = document.getElementById('message');
 
+if(localStorage.getItem('user')){
+    location.href='./profile.html';
+}
+
 
 function redirectToProfile(){
     if(localStorage.getItem('token')){
